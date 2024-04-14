@@ -1,6 +1,6 @@
 {
   "name": "su22-my-atm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a simple atm machine",
   "main": "index.js",
   "type": "module",
