@@ -26,13 +26,13 @@ if (pinAnswer.pin === myPin) {
                 type: "number"
             }
         ]);
-        if (withAmountAns.amountWithdraw <= myBalance) {
+        if (withAmountAns.amountWithdraw <= myBalance && withAmountAns.amountWithdraw > 0) {
             console.log(withAmountAns.amountWithdraw + " successfully withdrawn");
             myBalance -= withAmountAns.amountWithdraw;
             console.log("Your remaining balance is: " + myBalance);
         }
         else {
-            console.log("Not enough cash in your account");
+            console.log("Not enough cash in your account or enter valid amount");
         }
     }
     // FOR CHECK-BALANCE
